@@ -1,47 +1,29 @@
 import React from "react";
+import { categories } from "../../api/categories";
 import {
   Wrapper,
-  Heading,
-  Subheading,
-  CategorySection,
   CategoryCard,
   CategoryTitle,
+  CategorySection,
   CategoryDescription,
+  StyledParagraph,
 } from "./landingPagestyles";
 
-const categories = [
-  {
-    title: "Color",
-    description:
-      "Explore the different colors of tomatoes, from bright red to deep purple.",
-  },
-  {
-    title: "Shape",
-    description:
-      "Discover the variety of shapes that tomatoes come in, from round to pear-shaped.",
-  },
-  {
-    title: "Size",
-    description:
-      "Learn about the different sizes of tomatoes, from small cherry tomatoes to large beefsteak tomatoes.",
-  },
-];
-
-function LandingPage() {
-  return (
-    <Wrapper>
-      <Heading>Welcome to Tomatoes.com</Heading>
-      <Subheading>Explore the World of Tomatoes</Subheading>
-      <CategorySection>
-        {categories.map((category, index) => (
-          <CategoryCard key={index}>
-            <CategoryTitle>{category.title}</CategoryTitle>
-            <CategoryDescription>{category.description}</CategoryDescription>
-          </CategoryCard>
-        ))}
-      </CategorySection>
-    </Wrapper>
-  );
-}
+const LandingPage = () => (
+  <Wrapper>
+    <StyledParagraph>
+      Tomatoes are a delicious fruit that are used in many cuisines around the
+      world. They are a good source of vitamins and antioxidants.
+    </StyledParagraph>
+    <CategorySection>
+      {categories.map((category, index) => (
+        <CategoryCard key={index}>
+          <CategoryTitle>{category.title}</CategoryTitle>
+          <CategoryDescription>{category.description}</CategoryDescription>
+        </CategoryCard>
+      ))}
+    </CategorySection>
+  </Wrapper>
+);
 
 export default LandingPage;

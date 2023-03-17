@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import TopHeader from "./components/headers/top";
 import LandingPage from "./components/landingPage/landingPage";
 
 function App() {
@@ -7,8 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Tomatoe Insider</h1>
-      <h2>Created with Vite + React</h2>
+      <TopHeader />
       <LandingPage />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

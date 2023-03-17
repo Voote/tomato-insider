@@ -9,10 +9,7 @@ const Landing = () => {
       <main>
         <section>
           <h2>About Tomatoes</h2>
-          <p>
-            Tomatoes are a delicious fruit that are used in many cuisines around
-            the world. They are a good source of vitamins and antioxidants.
-          </p>
+          
         </section>
         <section>
           <h2>Types of Tomatoes</h2>
