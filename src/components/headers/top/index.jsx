@@ -2,11 +2,11 @@ import React from "react";
 import {
   Heading,
   Subheading,
-} from "../../landingPage/landingPagestyles";
+} from "../../landingPage/LandingPagestyles.styles";
 
 const TopHeader = () => (
   <>
-    <Heading>Welcome to Tomatoes Insider</Heading>
+    <Heading>Tomatoes Insider</Heading>
     <Subheading>Explore the World of Tomatoes</Subheading>
   </>
 );

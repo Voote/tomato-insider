@@ -1,13 +1,13 @@
 import React from "react";
 import { categories } from "../../api/categories";
+import { HoverableCategoryCard } from "./HoverableCategoryCard";
 import {
   Wrapper,
-  CategoryCard,
   CategoryTitle,
   CategorySection,
   CategoryDescription,
   StyledParagraph,
-} from "./landingPagestyles";
+} from "./LandingPagestyles.styles";
 
 const LandingPage = () => (
   <Wrapper>
@@ -17,10 +17,14 @@ const LandingPage = () => (
     </StyledParagraph>
     <CategorySection>
       {categories.map((category, index) => (
-        <CategoryCard key={index}>
+        <HoverableCategoryCard key={index}>
           <CategoryTitle>{category.title}</CategoryTitle>
           <CategoryDescription>{category.description}</CategoryDescription>
-        </CategoryCard>
+          <CategoryDescription className="text-area">
+            {category.description}
+            {category.extra}
+          </CategoryDescription>
+        </HoverableCategoryCard>
       ))}
     </CategorySection>
   </Wrapper>
