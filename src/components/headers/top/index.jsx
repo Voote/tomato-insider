@@ -1,8 +1,4 @@
-import React from "react";
-import {
-  Heading,
-  Subheading,
-} from "../../landingPage/LandingPagestyles.styles";
+import { Heading, Subheading } from "../Paragraps/Headings.styles";
 
 const TopHeader = () => (
   <>

@@ -1,6 +1,6 @@
 import React from "react";
 import { categories } from "../../api/categories";
-import { HoverableCategoryCard } from "./HoverableCategoryCard";
+import { HoverableCategoryCard } from "../HoverableCategoryCard/HoverableCategoryCard";
 import {
   Wrapper,
   CategoryTitle,

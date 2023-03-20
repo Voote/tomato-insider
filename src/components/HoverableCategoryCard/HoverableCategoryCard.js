@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { CategoryCard } from "./LandingPagestyles.styles";
+import { CategoryCard } from "../LandingPage/LandingPagestyles.styles";
 
 export const HoverableCategoryCard = styled(CategoryCard)`
   .text-area {
