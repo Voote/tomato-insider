@@ -4,8 +4,8 @@ export const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #333;
+  color: #fff;
   height: 80px;
   margin-top: auto;
 `;
@@ -17,7 +17,7 @@ export const FooterText = styled.p`
 
 export const FooterLink = styled.a`
   font-size: 0.9rem;
-  color: #ffffff;
+  color: #fff;
   text-decoration: underline;
 
   &:hover {

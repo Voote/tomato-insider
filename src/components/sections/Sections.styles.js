@@ -8,16 +8,16 @@ export const Wrapper = styled.div`
   justify-content: center;
   border-radius: 20px;
   min-height: 50vh;
-  background-color: #f5f5f5;
-`;
+  margin-bottom: 2rem;
+  background-color: #e8f0d9;
 
-export const StyledParagraph = styled.p`
-  margin-top: 2rem;
-  color: #a04;
+  @media (prefers-color-scheme: dark) {
+    background-color: #c5e1a5;
+  }
 `;
 
 // Section for displaying the different categories of tomatoes
-export const CategorySection = styled.div`
+export const SectionWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -25,7 +25,7 @@ export const CategorySection = styled.div`
 `;
 
 // Card for displaying a category of tomatoes
-export const CategoryCard = styled.div`
+export const SectionCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,13 +40,32 @@ export const CategoryCard = styled.div`
   padding: 2rem;
   transition: all 0.3s ease-in-out;
 
+  .text-area {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+
   &:hover {
     transform: translateY(-5px);
+  }
+
+  &:hover .text-area {
+    visibility: visible;
+    opacity: 1;
   }
 `;
 
 // Title for a category card
-export const CategoryTitle = styled.h3`
+export const SectionTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -55,7 +74,7 @@ export const CategoryTitle = styled.h3`
 `;
 
 // Description for a category card
-export const CategoryDescription = styled.p`
+export const SectionDescription = styled.p`
   font-size: 1rem;
   font-weight: 400;
   text-align: center;

@@ -1,10 +1,5 @@
-import { Heading, Subheading } from "../Paragraps/Headings.styles";
+import { Heading } from "../Paragraps/Headings.styles";
 
-const TopHeader = () => (
-  <>
-    <Heading>Tomatoes Insider</Heading>
-    <Subheading>Explore the World of Tomatoes</Subheading>
-  </>
-);
+const TopHeader = () => <Heading>Tomatoes Insider</Heading>;
 
 export default TopHeader;
