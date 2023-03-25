@@ -1,4 +1,4 @@
-export const spiecesList = [
+export const tomatoSpieces = [
   {
     id: 1,
     name: "Cherry Tomato",

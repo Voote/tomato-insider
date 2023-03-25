@@ -1,4 +1,4 @@
-import { spiecesList } from "../../../api/spieces";
+import { tomatoSpieces } from "../../../api/spieces";
 import {
   TomatoCard,
   TomatoDescription,
@@ -11,7 +11,7 @@ import {
 const TomatoeSpieces = () => (
   <TomatoWrapper>
     <TomatoSection>
-      {spiecesList.map((tomato) => (
+      {tomatoSpieces.map((tomato) => (
         <TomatoCard key={tomato.id}>
           <TomatoName>{tomato.name}</TomatoName>
           <TomatoImage src={tomato.image} alt={tomato.name} />
