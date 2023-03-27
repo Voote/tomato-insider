@@ -5,13 +5,6 @@ export const TomatoWrapper = styled.div`
   padding: 2rem;
   color: #333;
 
-  //nieuzywany
-  h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-
   @media (max-width: 768px) {
     padding: 1rem;
   }
