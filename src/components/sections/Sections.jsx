@@ -1,4 +1,3 @@
-import { categories } from "../../api/categories";
 import {
   Wrapper,
   SectionCard,
@@ -7,16 +6,17 @@ import {
   SectionDescription,
 } from "./Sections.styles";
 
-const Sections = () => (
+const Sections = ({ cat }) => (
   <Wrapper>
     <SectionWrapper>
-      {categories.map((category, index) => (
+      {cat.map((category, index) => (
         <SectionCard key={index}>
           <SectionTitle>{category.title}</SectionTitle>
           <SectionDescription>{category.description}</SectionDescription>
           <SectionDescription className="text-area">
-            {category.description}
-            {category.extra}
+            <p>{category.description}</p>
+            <p>{category.extra}</p>
+            <p className="examples">{category.examples.join(", ")}</p>
           </SectionDescription>
         </SectionCard>
       ))}

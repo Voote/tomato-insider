@@ -1,4 +1,4 @@
-const tomatoShapes = [
+export const tomatoShapes = [
   {
     title: "Round",
     description:

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-// Wrapper for the entire landing page
+// Wrapper for the entire section
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,10 +18,18 @@ export const Wrapper = styled.div`
 
 // Section for displaying the different categories of tomatoes
 export const SectionWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
   margin: 4vw 1vw;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 // Card for displaying a category of tomatoes
@@ -33,11 +41,11 @@ export const SectionCard = styled.div`
   width: 280px;
   height: 280px;
   background-color: #fff;
-  border-bottom: 1px solid black;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-bottom: 2px solid green;
+  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.16);
   border-radius: 10px;
   margin-bottom: 0.5vh;
-  padding: 2rem;
+  padding: 4vh;
   transition: all 0.3s ease-in-out;
 
   .text-area {
@@ -74,9 +82,16 @@ export const SectionTitle = styled.h3`
 `;
 
 // Description for a category card
-export const SectionDescription = styled.p`
+export const SectionDescription = styled.div`
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
   color: #666;
+
+  .examples {
+    color: #333;
+    background-color: #c5e1a5;
+    padding: 1rem;
+    border-radius: 10px;
+  }
 `;

@@ -1,44 +1,66 @@
-export const tomatoeColors = [
+export const tomatoColors = [
   {
     title: "Red",
-    description: `This is the most common color for tomatoes, and it's the
-    color that most people associate with tomatoes. Examples of red
-    tomatoes include beefsteak, cherry, and roma tomatoes.`,
-  },
-  {
-    title: "Orange",
-    description: `Some varieties of tomatoes can have an orange hue.
-    Examples include the Valencia tomato and the Persimmon tomato.`,
+    description:
+      "The most common color for tomatoes is red, which can range from bright red to deep red.",
+    examples: ["Beefsteak", "Cherry", "Plum"],
+    extra:
+      "The red color in tomatoes comes from a pigment called lycopene, which is an antioxidant that has been linked to various health benefits.",
   },
   {
     title: "Yellow",
-    description: `Yellow tomatoes can be a pale, creamy color or a bright,
-    sunny yellow. Examples include the Yellow Pear tomato and the
-    Lemon Boy tomato.`,
+    description:
+      "Yellow tomatoes have a milder flavor than red tomatoes and are often sweeter.",
+    examples: ["Yellow Pear", "Yellow Cherry", "Lemon Boy"],
+    extra:
+      "Yellow tomatoes contain lower levels of acidity than red tomatoes, which gives them a sweeter taste.",
+  },
+  {
+    title: "Orange",
+    description:
+      "Orange tomatoes are less common than red or yellow tomatoes, but they have a unique flavor.",
+    examples: ["Sunrise Bumblebee", "Kellogg's Breakfast", "Orange Banana"],
+    extra:
+      "Orange tomatoes get their color from a pigment called beta-carotene, which is a precursor to vitamin A and has been linked to various health benefits.",
   },
   {
     title: "Green",
-    description: `Green tomatoes are unripe tomatoes that have not yet turned
-    red. They can be used in recipes such as fried green tomatoes.
-    Examples include the Green Zebra tomato and the Aunt Ruby's German
-    Green tomato.`,
+    description:
+      "Green tomatoes are unripe tomatoes that have a tart, tangy flavor and a firmer texture than ripe tomatoes.",
+    examples: ["Green Zebra", "Evergreen", "Aunt Ruby's German Green"],
+    extra:
+      "Green tomatoes are often used for making fried green tomatoes, a popular Southern dish.",
   },
   {
     title: "Purple",
-    description: `Some varieties of tomatoes can have a deep purple color.
-    Examples include the Cherokee Purple tomato and the Black Krim
-    tomato.`,
+    description:
+      "Purple tomatoes have a unique color and a sweet, rich flavor.",
+    examples: ["Black Krim", "Indigo Rose", "Cherokee Purple"],
+    extra:
+      "Purple tomatoes get their color from a pigment called anthocyanin, which is an antioxidant that has been linked to various health benefits.",
   },
   {
-    title: "Brown",
-    description: `Brown tomatoes are not common, but some varieties can have
-    a brownish-red color. Examples include the Chocolate Stripes
-    tomato and the Brad's Black Heart tomato.`,
+    title: "Pink",
+    description:
+      "Pink tomatoes are a lighter shade of red and have a milder flavor.",
+    examples: ["Brandywine", "Mortgage Lifter", "Hillbilly"],
+    extra:
+      "Pink tomatoes are often considered to have a smoother and less acidic flavor than red tomatoes.",
+  },
+  {
+    title: "Black",
+    description:
+      "Black tomatoes have a unique color and a rich, complex flavor.",
+    examples: ["Black Prince", "Carbon", "Paul Robeson"],
+    extra:
+      "Black tomatoes get their color from a high concentration of anthocyanin, which is an antioxidant that has been linked to various health benefits.",
   },
   {
     title: "Striped",
-    description: `Some varieties of tomatoes can have stripes of different
-    colors. Examples include the Striped German tomato and the
-    Tigerella tomato.`,
+    description:
+      "Striped tomatoes have a unique appearance with streaks or bands of color.",
+    examples: ["Tigerella", "Mr. Stripey", "Striped Cavern"],
+    extra:
+      "The stripes on these tomatoes are caused by variations in pigment concentration during fruit development.",
   },
 ];
