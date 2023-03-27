@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const TomatoWrapper = styled.div`
-  /* background-color: #fff; */
   padding: 2rem;
   color: #333;
 
