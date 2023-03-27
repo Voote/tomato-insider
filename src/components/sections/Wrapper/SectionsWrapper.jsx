@@ -4,12 +4,13 @@ import {
   SectionTitle,
   SectionWrapper,
   SectionDescription,
-} from "./Sections.styles";
+} from "./SectionsWrapper.styles";
 
-const Sections = ({ cat }) => (
+const SectionsWrapper = ({ title, data }) => (
   <Wrapper>
+  <SectionTitle>{title}</SectionTitle>
     <SectionWrapper>
-      {cat.map((category, index) => (
+      {data.map((category, index) => (
         <SectionCard key={index}>
           <SectionTitle>{category.title}</SectionTitle>
           <SectionDescription>{category.description}</SectionDescription>
@@ -24,4 +25,4 @@ const Sections = ({ cat }) => (
   </Wrapper>
 );
 
-export default Sections;
+export default SectionsWrapper;

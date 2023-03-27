@@ -1,13 +1,28 @@
 import { tomatoColors } from "../../../api/colors";
 import { tomatoShapes } from "../../../api/shapes";
 import { tomatoSizes } from "../../../api/sizes";
-import Sections from "../Sections";
+import SectionsWrapper from "../Wrapper/SectionsWrapper";
+
+const tomatoesCategories = [
+  {
+    title: "Tomato Colors",
+    data: tomatoColors,
+  },
+  {
+    title: "Tomato Shapes",
+    data: tomatoShapes,
+  },
+  {
+    title: "Tomato Sizes",
+    data: tomatoSizes,
+  },
+];
 
 const Categories = () => (
   <>
-    <Sections cat={tomatoColors} />
-    <Sections cat={tomatoShapes} />
-    <Sections cat={tomatoSizes} />
+    {tomatoesCategories.map(({ title, data }) => (
+      <SectionsWrapper key={title} title={title} data={data} />
+    ))}
   </>
 );
 

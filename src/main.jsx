@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Global } from "@emotion/react";
-import { globalStyles } from "./globalStyles";
 import App from "./App";
+import labels_en from "./assets/labels/labelsEng";
+import { LabelsContext } from "./LabelsContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Global styles={globalStyles} />
-    <App />
+   <LabelsContext.Provider value={labels_en}><App /></LabelsContext.Provider>
   </React.StrictMode>
 );

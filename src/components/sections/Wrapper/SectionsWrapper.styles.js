@@ -38,8 +38,8 @@ export const SectionCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 280px;
-  height: 280px;
+  width: 270px;
+  height: 270px;
   background-color: #fff;
   border-bottom: 2px solid green;
   box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.16);
