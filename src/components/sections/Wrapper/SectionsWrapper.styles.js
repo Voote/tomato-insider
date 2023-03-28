@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-// Wrapper for the entire section
 export const SectionsContainer  = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@ export const SectionsContainer  = styled.div`
   }
 `;
 
-// Section for displaying the different categories of tomatoes
 export const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -32,7 +30,6 @@ export const CardsContainer = styled.div`
   }
 `;
 
-// Card for displaying a category of tomatoes
 export const SectionCard  = styled.div`
   display: flex;
   flex-direction: column;
@@ -72,7 +69,6 @@ export const SectionCard  = styled.div`
   }
 `;
 
-// Title for a category card
 export const CardTitle = styled.h3`
   font-size: ${({ big }) => (big ? "2rem" : "1.5rem")};
   font-weight: 500;
@@ -81,8 +77,6 @@ export const CardTitle = styled.h3`
   color: ${({ theme }) => theme.palette.secondary.main};
 `;
 
-
-// Description for a category card
 export const CardDescription = styled.div`
   font-size: 1rem;
   font-weight: 400;
@@ -95,4 +89,10 @@ export const CardDescription = styled.div`
     padding: 1rem;
     border-radius: 10px;
   }
+`;
+
+export const GrayedOutCard = styled(SectionCard)`
+/* background: linear-gradient(to bottom, #4CAF50 10%, #F44336 80%); */
+opacity: 0.5;
+pointer-events: none;
 `;
