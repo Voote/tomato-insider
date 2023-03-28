@@ -9,9 +9,9 @@ This project was bootstrapped with Vite. It's my first project with this technol
 ### Under construction
 
 ### Next tasks to do:
-1. Improve sections title
-2. Transfer labels to labels
-3. Create language API
-4. Improve language switch
+1. Add Tomatoe Spieces
+2. Improve sections title
+3. Transfer labels to labels
+4. Create language API
 
 *Remember to delete this reminder after completing the tasks.*

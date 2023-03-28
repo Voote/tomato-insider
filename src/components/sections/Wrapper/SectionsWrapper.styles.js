@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 // Wrapper for the entire section
-export const Wrapper = styled.div`
+export const SectionsContainer  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,15 +9,15 @@ export const Wrapper = styled.div`
   border-radius: 20px;
   min-height: 50vh;
   margin-bottom: 2rem;
-  background-color: #e8f0d9;
+  background-color: ${({ theme }) => theme.palette.background.light};
 
   @media (prefers-color-scheme: dark) {
-    background-color: #c5e1a5;
+    background-color: ${({ theme }) => theme.palette.background.main};
   }
 `;
 
 // Section for displaying the different categories of tomatoes
-export const SectionWrapper = styled.div`
+export const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
@@ -33,7 +33,7 @@ export const SectionWrapper = styled.div`
 `;
 
 // Card for displaying a category of tomatoes
-export const SectionCard = styled.div`
+export const Card  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,24 +73,25 @@ export const SectionCard = styled.div`
 `;
 
 // Title for a category card
-export const SectionTitle = styled.h3`
-  font-size: 1.5rem;
+export const CardTitle = styled.h3`
+  font-size: ${({ big }) => (big ? "2rem" : "1.5rem")};
   font-weight: 500;
   margin-bottom: 1rem;
   text-align: center;
-  color: #333;
+  color: ${({ theme }) => theme.palette.secondary.main};
 `;
 
+
 // Description for a category card
-export const SectionDescription = styled.div`
+export const CardDescription = styled.div`
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  color: #666;
+  color: ${({ theme }) => theme.palette.text.secondary};
 
   .examples {
-    color: #333;
-    background-color: #c5e1a5;
+    color: ${({ theme }) => theme.palette.text.primary};
+    background-color: ${({ theme }) => theme.palette.background.main};
     padding: 1rem;
     border-radius: 10px;
   }

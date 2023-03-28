@@ -1,28 +1,28 @@
 import {
-  Wrapper,
-  SectionCard,
-  SectionTitle,
-  SectionWrapper,
-  SectionDescription,
+  Card,
+  CardTitle,
+  CardsContainer,
+  CardDescription,
+  SectionsContainer,
 } from "./SectionsWrapper.styles";
 
 const SectionsWrapper = ({ title, data }) => (
-  <Wrapper>
-  <SectionTitle>{title}</SectionTitle>
-    <SectionWrapper>
+  <SectionsContainer>
+  <CardTitle big>{title}</CardTitle>
+    <CardsContainer>
       {data.map((category, index) => (
-        <SectionCard key={index}>
-          <SectionTitle>{category.title}</SectionTitle>
-          <SectionDescription>{category.description}</SectionDescription>
-          <SectionDescription className="text-area">
+        <Card key={index}>
+          <CardTitle>{category.title}</CardTitle>
+          <CardDescription>{category.description}</CardDescription>
+          <CardDescription className="text-area">
             <p>{category.description}</p>
             <p>{category.extra}</p>
             <p className="examples">{category.examples.join(", ")}</p>
-          </SectionDescription>
-        </SectionCard>
+          </CardDescription>
+        </Card>
       ))}
-    </SectionWrapper>
-  </Wrapper>
+    </CardsContainer>
+  </SectionsContainer>
 );
 
 export default SectionsWrapper;

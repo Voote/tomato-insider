@@ -8,8 +8,9 @@ export const theme = {
       main: "#e55",
     },
     background: {
-      main: "#f5deb3",
+      main: "#c5e1a5",
       paper: "#fff8e1",
+      light: '#e8f0d9'
     },
     error: {
       main: "#dc3545",
@@ -22,6 +23,10 @@ export const theme = {
     },
     success: {
       main: "#28a745",
+    },
+    text: {
+      primary: "#213547",
+      secondary: "#666",
     },
   },
   typography: {
