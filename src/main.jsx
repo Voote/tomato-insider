@@ -1,11 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import labels_en from "./assets/labels/labelsEng";
-import { LabelsContext } from "./LabelsContext";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import  './assets/labels';
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <LabelsContext.Provider value={labels_en}><App /></LabelsContext.Provider>
+    <App />
   </React.StrictMode>
 );

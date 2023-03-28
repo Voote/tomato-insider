@@ -1,3 +1,4 @@
+import { lang } from "../utils/languageConfig";
 import {
   LanguageLabel,
   LanguageRadio,
@@ -11,41 +12,19 @@ const LanguageSelector = ({ language, onLanguageChange }) => {
 
   return (
     <LanguageSelectorWrapper>
-      <LanguageLabel htmlFor="en" active={language === "en"}>
-        <LanguageRadio
-          type="radio"
-          id="en"
-          name="language"
-          value="en"
-          checked={language === "en"}
-          onChange={handleChange}
-        />
-        EN
-      </LanguageLabel>
-
-      <LanguageLabel htmlFor="es" active={language === "es"}>
-        <LanguageRadio
-          type="radio"
-          id="es"
-          name="language"
-          value="es"
-          checked={language === "es"}
-          onChange={handleChange}
-        />
-        ES
-      </LanguageLabel>
-
-      <LanguageLabel htmlFor="pl" active={language === "pl"}>
-        <LanguageRadio
-          id="pl"
-          value="pl"
-          type="radio"
-          name="language"
-          checked={language === "pl"}
-          onChange={handleChange}
-        />
-        PL
-      </LanguageLabel>
+      {lang.map(({ code, label }) => (
+        <LanguageLabel htmlFor={code} active={language === code} key={code}>
+          <LanguageRadio
+            type="radio"
+            id={code}
+            name="language"
+            value={code}
+            checked={language === code}
+            onChange={handleChange}
+          />
+          {label}
+        </LanguageLabel>
+      ))}
     </LanguageSelectorWrapper>
   );
 };

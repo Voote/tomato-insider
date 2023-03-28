@@ -1,15 +1,14 @@
 import { useState } from "react";
 import { ThemeProvider, Global } from "@emotion/react";
 import { theme, globalStyles } from "./assets/theme";
+import { languageLabels } from "./components/utils/languageConfig";
 import { LabelsContext } from "./LabelsContext";
 import Logo from "./components/headers/Logo";
 import Footer from "./components/Footer/Footer";
+import Categories from "./components/sections/Categories/Categories";
 import LandingPage from "./components/landing/LandingPage";
 import TomatoeSpieces from "./components/sections/Spieces/Spieces";
-import Categories from "./components/sections/Categories/Categories";
 import LanguageSelector from "./components/LanguageSelector/LanguageSelector";
-import labels_en from "./assets/labels/labelsEng";
-import labels_es from "./assets/labels/labelsEsp";
 
 const App = () => {
   const [language, setLanguage] = useState("en");
@@ -18,7 +17,7 @@ const App = () => {
     setLanguage(event.target.value);
   };
 
-  const currentLabels = language === "en" ? labels_en : labels_es;
+  const currentLabels = languageLabels[language];
 
   return (
     <ThemeProvider theme={theme}>
