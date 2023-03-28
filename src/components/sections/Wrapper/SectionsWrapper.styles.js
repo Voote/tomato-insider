@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
-export const SectionsContainer  = styled.div`
+export const SectionsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +19,7 @@ export const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
+  /* grid-auto-flow: dense; */
   margin: 4vw 1vw;
 
   @media screen and (min-width: 768px) {
@@ -30,7 +31,7 @@ export const CardsContainer = styled.div`
   }
 `;
 
-export const SectionCard  = styled.div`
+export const SectionCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,7 +71,7 @@ export const SectionCard  = styled.div`
 `;
 
 export const CardTitle = styled.h3`
-  font-size: ${({ big }) => (big ? "2rem" : "1.5rem")};
+  font-size: ${({ big }) => (big ? '2rem' : '1.5rem')};
   font-weight: 500;
   margin-bottom: 1rem;
   text-align: center;
@@ -92,7 +93,11 @@ export const CardDescription = styled.div`
 `;
 
 export const GrayedOutCard = styled(SectionCard)`
-/* background: linear-gradient(to bottom, #4CAF50 10%, #F44336 80%); */
-opacity: 0.5;
-pointer-events: none;
+  /* background: linear-gradient(to bottom, #4CAF50 10%, #F44336 80%); */
+  opacity: 0.5;
+  pointer-events: none;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 `;
