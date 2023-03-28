@@ -1,3 +1,4 @@
+import { generateGrayedOutCards } from "../../utils/sectionsWrapperHelper";
 import {
   CardTitle,
   SectionCard,
@@ -21,6 +22,7 @@ const SectionsWrapper = ({ title, data }) => (
           </CardDescription>
         </SectionCard>
       ))}
+      {generateGrayedOutCards(data.length)}
     </CardsContainer>
   </SectionsContainer>
 );

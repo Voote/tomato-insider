@@ -10,8 +10,7 @@ This project was bootstrapped with Vite. It's my first project with this technol
 
 ### Next tasks to do:
 1. Add Tomatoe Spieces
-2. Improve sections title
+2. Create language API
 3. Transfer labels to labels
-4. Create language API
 
 *Remember to delete this reminder after completing the tasks.*
