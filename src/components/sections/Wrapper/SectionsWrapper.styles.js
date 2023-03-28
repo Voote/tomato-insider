@@ -33,7 +33,7 @@ export const CardsContainer = styled.div`
 `;
 
 // Card for displaying a category of tomatoes
-export const Card  = styled.div`
+export const SectionCard  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { ThemeProvider, Global } from "@emotion/react";
 import { theme, globalStyles } from "./assets/theme";
-import Footer from "./components/Footer/Footer";
-import Logo from "./components/headers/Logo";
-import LandingPage from "./components/landing/LandingPage";
-import Categories from "./components/sections/Categories/Categories";
-import TomatoeSpieces from "./components/sections/Spieces/Spieces";
 import { LabelsContext } from "./LabelsContext";
+import Logo from "./components/headers/Logo";
+import Footer from "./components/Footer/Footer";
+import LandingPage from "./components/landing/LandingPage";
+import TomatoeSpieces from "./components/sections/Spieces/Spieces";
+import Categories from "./components/sections/Categories/Categories";
+import LanguageSelector from "./components/LanguageSelector/LanguageSelector";
 import labels_en from "./assets/labels/labelsEng";
 import labels_es from "./assets/labels/labelsEsp";
-import LanguageSelector from "./components/LanguageSelector";
 
 const App = () => {
   const [language, setLanguage] = useState("en");

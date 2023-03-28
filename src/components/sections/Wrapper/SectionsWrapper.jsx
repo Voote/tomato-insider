@@ -1,6 +1,6 @@
 import {
-  Card,
   CardTitle,
+  SectionCard,
   CardsContainer,
   CardDescription,
   SectionsContainer,
@@ -11,7 +11,7 @@ const SectionsWrapper = ({ title, data }) => (
   <CardTitle big>{title}</CardTitle>
     <CardsContainer>
       {data.map((category, index) => (
-        <Card key={index}>
+        <SectionCard key={index}  data-testid="section-card">
           <CardTitle>{category.title}</CardTitle>
           <CardDescription>{category.description}</CardDescription>
           <CardDescription className="text-area">
@@ -19,7 +19,7 @@ const SectionsWrapper = ({ title, data }) => (
             <p>{category.extra}</p>
             <p className="examples">{category.examples.join(", ")}</p>
           </CardDescription>
-        </Card>
+        </SectionCard>
       ))}
     </CardsContainer>
   </SectionsContainer>
