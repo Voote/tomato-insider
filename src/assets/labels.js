@@ -7,7 +7,7 @@ export const labels_en = {
   
   export const labels_it = {
     myLabel: "La mia etichetta",
-    welcomeTo: "Benvenuti nel nostro Emporio di Pomodori",
+    welcomeTo: "Benvenuti nel nostro Emporio di Pomodori!",
     discoverWorld: `Scopri un mondo di pomodori succosi 🍅 e gustosi di ogni forma e colore. Trova la tua varietà perfetta qui sotto`,
   };
   
